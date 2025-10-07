@@ -127,7 +127,7 @@ body {
 }
 
 /* CARDS ========== */
-.cards{
+.over{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,55 +143,6 @@ body {
 .cards h3{
   font-size: 20px;
 }
-
-
-/* CARD 1 ========== */
-/* .card-1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-
-  padding: 25px;
-  width: 70%;
-
-  border-radius: 5px;
-  border: 2px solid var(--color-text-main);
-  box-shadow: #0066FF 0px 0px 5px 0px;
-}
-
-
-.card-2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-
-  padding: 25px;
-  width: 70%;
-
-  border-radius: 5px;
-  border: 2px solid var(--color-text-main);
-  box-shadow: #0066FF 0px 0px 5px 0px;
-}
-
-.card-3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-
-  padding: 25px;
-  width: 70%;
-
-  border-radius: 5px;
-  border: 2px solid var(--color-text-main);
-  box-shadow: #0066FF 0px 0px 5px 0px;
-} */
-
 
 .carousel-container {
   position: relative;
@@ -270,19 +221,19 @@ button.next {
   align-items: center;
   text-align: center;
   gap: 20px;
-  margin: 50px;
+  margin-top: 30px;
 }
 
-.text-about h2 {
+#text-about h2 {
   font-size: 30px;
   font-weight: 700;
   line-height: 150%;
   margin-top: 10px;
 }
 
-.text-about p {
+#text-about p {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   font-family: var(--font-family);
 
@@ -357,6 +308,75 @@ button.next {
   transform: scale(1.05);
   border: 2px solid #007bff;
 }
+
+
+/* ========== FOOTER ========== */
+#footer {
+  color: #f5f5f5;
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.img-contact {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.text-footer {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #25d366;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.icone {
+  margin-top: 20px;
+}
+
+.whatsapp-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+}
+
+.whatsapp-link img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .text-footer {
+    font-size: 1.2rem;
+  }
+  .footer-text {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* ========== RESPONSIVO ========== */
 @media screen and (max-width: 769px) {
@@ -500,36 +520,3 @@ button.next {
   }
 }
 
-/* ========== CONTATO E RODAPÉ ========== */
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  padding: 25px;
-  border-top: 2px solid var(--color-text-main);
-}
-
-.img-contact {
-  width: 200px;
-  height: 194px;
-  border-radius: 10px;
-  border: 1px solid var(--color-text-main);
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-
-  gap: 3rem;
-}
-
-.contact-info h4 {
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--color-text-main);
-  transition: all 0.3s ease-in-out;
-}
