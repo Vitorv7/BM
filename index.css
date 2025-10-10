@@ -361,7 +361,7 @@ button.next {
   height: 35px;
 }
 
-/* ========== RESPONSIVO ========== */
+/* ========== RESPONSIVIDADE ========== */
 @media screen and (max-width: 769px) {
   .line,
   .about {
@@ -406,7 +406,6 @@ button.next {
     width: 140%;
   }
 
-
   .top-header,
   .footer,
   .services-wrapper,
@@ -414,35 +413,13 @@ button.next {
   .first-section {
   visibility: hidden;
   } 
-}
 
-@media (max-width: 425px)  {
-  .img-icon{
+  .title-header{
     display: none;
   }
+}
 
-  .title-header h1{
-    display:none;
-  }
-
-
-  .header-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 70px;
-  }
-
+@media screen and (max-width: 414px) {
+  /* IPHONE 11 */
   .first-section{
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.block{
-  display: flex;
-
-}
 }
