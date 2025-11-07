@@ -421,5 +421,21 @@ button.next {
 
 @media screen and (max-width: 414px) {
   /* IPHONE 11 */
+  .header-list{
+    gap: 20px;
+    letter-spacing: 0;
+  }
+  
+  .header-list li a{
+    font-size: 20px;
+  }
 
+  .block h1{
+    font-size: 22px;
+  }
+
+.block p {
+  font-size: 20px;
+  letter-spacing: 0;
+}
 }
